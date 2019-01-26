@@ -42,6 +42,9 @@
                                         <integer key="value" value="32"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onCLick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YOR-M0-hhN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DO0-d5-NvW">
                                 <rect key="frame" x="143" y="215" width="89" height="89.5"/>
@@ -61,6 +64,9 @@
                                         <integer key="value" value="32"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onCLick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Itu-C3-kZT"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ao-TF-jPw">
                                 <rect key="frame" x="250.5" y="215" width="89.5" height="89.5"/>
@@ -80,6 +86,9 @@
                                         <integer key="value" value="32"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onCLick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="J8A-YI-71v"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z1j-0P-CrA">
                                 <rect key="frame" x="35" y="322.5" width="89.5" height="89"/>
@@ -99,6 +108,9 @@
                                         <integer key="value" value="32"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onCLick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ya0-ig-ZAp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eqJ-8B-6AZ">
                                 <rect key="frame" x="143" y="322.5" width="89" height="89"/>
@@ -118,6 +130,9 @@
                                         <integer key="value" value="32"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onCLick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KSc-Bk-cwM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ek-mL-Sp1">
                                 <rect key="frame" x="250.5" y="322.5" width="89.5" height="89"/>
@@ -137,6 +152,9 @@
                                         <integer key="value" value="32"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onCLick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BZY-Wa-nLg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lAt-jh-HMQ">
                                 <rect key="frame" x="35" y="429.5" width="89.5" height="89.5"/>
@@ -156,6 +174,9 @@
                                         <integer key="value" value="32"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onCLick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YgY-KX-7LX"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0KY-71-cpU">
                                 <rect key="frame" x="143" y="429.5" width="89" height="89.5"/>
@@ -175,6 +196,9 @@
                                         <integer key="value" value="32"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onCLick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Sa6-Xz-nXq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0uH-kl-0L3">
                                 <rect key="frame" x="250.5" y="429.5" width="89.5" height="89.5"/>
@@ -194,6 +218,9 @@
                                         <integer key="value" value="32"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onCLick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mAG-eU-aa5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wkh-p5-QSJ">
                                 <rect key="frame" x="35" y="541" width="89.5" height="89.5"/>
@@ -213,6 +240,9 @@
                                         <integer key="value" value="32"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onCLick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="V4b-zp-ZLB"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRd-A2-Fya">
                                 <rect key="frame" x="143" y="541" width="89" height="89.5"/>
@@ -232,6 +262,9 @@
                                         <integer key="value" value="32"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onCLick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="e1A-G6-cgf"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qlj-sd-DBn">
                                 <rect key="frame" x="250.5" y="541" width="89.5" height="89.5"/>
@@ -250,6 +283,9 @@
                                         <integer key="value" value="32"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="onStepBack:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3LS-T2-4eT"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home_icon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ko-iV-Vmh">
                                 <rect key="frame" x="131" y="70" width="113" height="112"/>

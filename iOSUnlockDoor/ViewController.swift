@@ -65,6 +65,15 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func onCLick(_ sender: Any) {
+        handleTap();
+    }
+    
+    @IBAction func onStepBack(_ sender: Any) {
+        
+        handleStepBack();
+    }
+    
     
     @objc private func handleTap() {
         print("Attempting to animate stroke")
@@ -72,6 +81,17 @@ class ViewController: UIViewController {
         basicAnimation.fromValue = progressTicker
         
         progressTicker = progressTicker + 0.20
+        
+        basicAnimation.toValue = progressTicker
+        
+        shapeLayer.add(basicAnimation, forKey: "urSoBasic")
+    }
+    
+    @objc private func handleStepBack() {
+        
+        basicAnimation.fromValue = progressTicker
+        
+        progressTicker = progressTicker - 0.20
         
         basicAnimation.toValue = progressTicker
         
