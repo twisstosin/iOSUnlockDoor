@@ -76,6 +76,7 @@ class ViewController: UIViewController {
     
     
     @objc private func handleTap() {
+        if (progressTicker >= 0 && progressTicker < 0.80){
         print("Attempting to animate stroke")
         
         basicAnimation.fromValue = progressTicker
@@ -85,10 +86,12 @@ class ViewController: UIViewController {
         basicAnimation.toValue = progressTicker
         
         shapeLayer.add(basicAnimation, forKey: "urSoBasic")
+        }
     }
     
     @objc private func handleStepBack() {
-        
+        if (progressTicker >= 0.20){
+        print("Attempting to animate stroke")
         basicAnimation.fromValue = progressTicker
         
         progressTicker = progressTicker - 0.20
@@ -96,6 +99,7 @@ class ViewController: UIViewController {
         basicAnimation.toValue = progressTicker
         
         shapeLayer.add(basicAnimation, forKey: "urSoBasic")
+        }
     }
 }
 
