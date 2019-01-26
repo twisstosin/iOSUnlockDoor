@@ -14,6 +14,10 @@ class ViewController: UIViewController {
     
     let shapeLayer = CAShapeLayer();
     
+    var progressTicker : Float = 0;
+    
+    var basicAnimation : CABasicAnimation!
+    
     var animLayer: CALayer {
         return animationView.layer
     }
@@ -21,7 +25,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupLayer()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
+        
+        basicAnimation.duration = 0.5
+        
+        basicAnimation.fillMode = CAMediaTimingFillMode.forwards
+        basicAnimation.isRemovedOnCompletion = false
+        
+        shapeLayer.add(basicAnimation, forKey: "urSoBasic")
     }
     
     func setupLayer() {
@@ -33,7 +45,7 @@ class ViewController: UIViewController {
         let circularPath = UIBezierPath(arcCenter: center, radius: 60, startAngle: -CGFloat.pi / 2, endAngle: 2 * CGFloat.pi, clockwise: true)
         trackLayer.path = circularPath.cgPath
         
-        trackLayer.strokeColor = UIColor.lightGray.cgColor
+        trackLayer.strokeColor = UIColor(red:0.13, green:0.14, blue:0.14, alpha:1.0).cgColor
         trackLayer.lineWidth = 7
         trackLayer.fillColor = UIColor.clear.cgColor
         trackLayer.lineCap = CAShapeLayerLineCap.round
@@ -42,7 +54,7 @@ class ViewController: UIViewController {
         //        let circularPath = UIBezierPath(arcCenter: center, radius: 100, startAngle: -CGFloat.pi / 2, endAngle: 2 * CGFloat.pi, clockwise: true)
         shapeLayer.path = circularPath.cgPath
         
-        shapeLayer .strokeColor = UIColor.red.cgColor
+        shapeLayer .strokeColor = UIColor(red:0.86, green:0.22, blue:0.37, alpha:1.0).cgColor
         shapeLayer.lineWidth = 7
         shapeLayer.fillColor = UIColor.clear.cgColor
         shapeLayer.lineCap = CAShapeLayerLineCap.round
@@ -51,21 +63,17 @@ class ViewController: UIViewController {
         
         view.layer.addSublayer(shapeLayer)
         
-        view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(handleTap)))
     }
     
     
     @objc private func handleTap() {
         print("Attempting to animate stroke")
         
-        let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
+        basicAnimation.fromValue = progressTicker
         
-        basicAnimation.toValue = 1
+        progressTicker = progressTicker + 0.20
         
-        basicAnimation.duration = 2
-        
-        basicAnimation.fillMode = CAMediaTimingFillMode.forwards
-        basicAnimation.isRemovedOnCompletion = false
+        basicAnimation.toValue = progressTicker
         
         shapeLayer.add(basicAnimation, forKey: "urSoBasic")
     }
