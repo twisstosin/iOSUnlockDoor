@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNLOCK YOUR DOOR" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lpR-A1-07Z">
-                                <rect key="frame" x="35" y="37" width="305" height="18"/>
+                                <rect key="frame" x="35" y="23" width="305" height="18"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -251,8 +251,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X14-0A-ohI" userLabel="AnimationView">
-                                <rect key="frame" x="132" y="70" width="112" height="112"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="home_icon" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7Ko-iV-Vmh">
+                                <rect key="frame" x="131" y="70" width="113" height="112"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </imageView>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X14-0A-ohI" userLabel="AnimationView" customClass="UIImageView">
+                                <rect key="frame" x="132" y="71" width="112" height="112"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="lessThanOrEqual" constant="200" id="hDq-82-zbs"/>
@@ -277,7 +283,7 @@
                             <constraint firstItem="0uH-kl-0L3" firstAttribute="top" secondItem="2Ek-mL-Sp1" secondAttribute="bottom" constant="18" id="Anf-ca-MzK"/>
                             <constraint firstItem="eqJ-8B-6AZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bbd-U1-d0U"/>
                             <constraint firstItem="Wkh-p5-QSJ" firstAttribute="width" secondItem="Wkh-p5-QSJ" secondAttribute="height" multiplier="1:1" id="Bur-A4-Dqr"/>
-                            <constraint firstItem="X14-0A-ohI" firstAttribute="top" secondItem="lpR-A1-07Z" secondAttribute="bottom" constant="15" id="CJY-Lb-pJ0"/>
+                            <constraint firstItem="X14-0A-ohI" firstAttribute="top" secondItem="lpR-A1-07Z" secondAttribute="bottom" constant="30" id="CJY-Lb-pJ0"/>
                             <constraint firstItem="0KY-71-cpU" firstAttribute="top" secondItem="eqJ-8B-6AZ" secondAttribute="bottom" constant="18" id="DGL-uD-F0m"/>
                             <constraint firstItem="2Ek-mL-Sp1" firstAttribute="top" secondItem="9Ao-TF-jPw" secondAttribute="bottom" constant="18" id="E1I-KO-fLC"/>
                             <constraint firstItem="Wkh-p5-QSJ" firstAttribute="height" secondItem="gRd-A2-Fya" secondAttribute="height" id="E5a-BR-KMQ"/>
@@ -312,7 +318,7 @@
                             <constraint firstItem="z1j-0P-CrA" firstAttribute="height" secondItem="eqJ-8B-6AZ" secondAttribute="height" id="dco-tH-Dn8"/>
                             <constraint firstItem="gRd-A2-Fya" firstAttribute="width" secondItem="gRd-A2-Fya" secondAttribute="height" multiplier="1:1" id="dzC-eI-LXg"/>
                             <constraint firstItem="lAt-jh-HMQ" firstAttribute="width" secondItem="lAt-jh-HMQ" secondAttribute="height" multiplier="1:1" id="eYy-pI-3sJ"/>
-                            <constraint firstItem="lpR-A1-07Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="17" id="gsi-9Y-7En"/>
+                            <constraint firstItem="lpR-A1-07Z" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="3" id="gsi-9Y-7En"/>
                             <constraint firstItem="WDX-NW-AH3" firstAttribute="height" secondItem="9Ao-TF-jPw" secondAttribute="height" id="i2t-2e-CNI"/>
                             <constraint firstItem="gRd-A2-Fya" firstAttribute="width" secondItem="gRd-A2-Fya" secondAttribute="height" multiplier="1:1" id="jAP-dU-tOh"/>
                             <constraint firstItem="z1j-0P-CrA" firstAttribute="width" secondItem="2Ek-mL-Sp1" secondAttribute="width" id="k84-zD-MnR"/>
@@ -341,10 +347,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="133.33333333333334" y="131.25"/>
+            <point key="canvasLocation" x="132" y="130.88455772113943"/>
         </scene>
     </scenes>
     <resources>
         <image name="back_btn" width="23" height="16"/>
+        <image name="home_icon" width="49" height="49"/>
     </resources>
 </document>
