@@ -91,7 +91,7 @@ class ViewController: UIViewController {
     
     @objc private func handleStepBack() {
         if (progressTicker >= 0.20){
-        print("Attempting to animate stroke")
+        print("Attempting to animate stroke backstep")
         basicAnimation.fromValue = progressTicker
         
         progressTicker = progressTicker - 0.20
