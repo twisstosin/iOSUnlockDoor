@@ -87,6 +87,12 @@ class ViewController: UIViewController {
         
         shapeLayer.add(basicAnimation, forKey: "urSoBasic")
         }
+        
+        if (progressTicker == 0.80) {
+            shapeLayer .strokeColor = UIColor(red:0.21, green:0.66, blue:0.42, alpha:1.0).cgColor
+        } else {
+            shapeLayer .strokeColor = UIColor(red:0.86, green:0.22, blue:0.37, alpha:1.0).cgColor
+        }
     }
     
     @objc private func handleStepBack() {
@@ -99,6 +105,12 @@ class ViewController: UIViewController {
         basicAnimation.toValue = progressTicker
         
         shapeLayer.add(basicAnimation, forKey: "urSoBasic")
+        }
+        
+        if (progressTicker == 0.80) {
+            shapeLayer .strokeColor = UIColor(red:0.21, green:0.66, blue:0.42, alpha:1.0).cgColor
+        } else {
+            shapeLayer .strokeColor = UIColor(red:0.86, green:0.22, blue:0.37, alpha:1.0).cgColor
         }
     }
 }
