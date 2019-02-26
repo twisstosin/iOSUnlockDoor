@@ -1,10 +1,10 @@
 # iOSUnlockDoor
 An app for unlocking your doors using your iphone (concept)
-Designed by <a href= "https://twitter.com/dare_adekoya_">Dare Adekoya</>
+Designed by <a href= "https://twitter.com/dare_adekoya_">Dare Adekoya
 
-Protoype : <a href= "https://projects.invisionapp.com/prototype/UNLOCK-DOOR-cjrbw87go01gtsb0139r9o6ev/play/981f843b">here</>
+<a href= "https://projects.invisionapp.com/prototype/UNLOCK-DOOR-cjrbw87go01gtsb0139r9o6ev/play/981f843b">Protoype here
 
-Invision Studio Project file : <a href= "https://www.dropbox.com/s/821c13pp6n8pdtd/UNLOCK%20DOOR.studio?dl=0">here</>
+<a href= "https://www.dropbox.com/s/821c13pp6n8pdtd/UNLOCK%20DOOR.studio?dl=0">Invision Studio Project file here
 
 
 ## Screenshots
